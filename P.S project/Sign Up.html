@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div>
+        <h1 class="text-center text-danger-emphasis mt-5 fw-bold">SwiftPay</h1>
+        <h3 class="text-center mt-4 fw-light">Create Account</h3>
+        <h6 class="text-center fw-lighter">Create an account with SwiftPay to get started</h6>
+        <div class="p-4">
+            <p>First Name</p>
+            <input type="text" id="firstName" class="my-3 form-control" required />
+            <p>Last Name</p>
+            <input type="text" id="lastName" class="my-3 form-control" required />
+            <p>Email Address</p>
+            <input type="email" id="emailAddress" class="my-3 form-control" required />
+            <div class="parent1">
+                <p>Enter Password</p>
+                <input type="password" id="passWord" pattern=".{8,}" minlength="8" required title="8 characters minimum"
+                    class="my-3 form-control" required />
+                <!-- <div class="btns">
+                    <button id="showps" class="showHide" onclick="showPass()">show</button>
+                    <button id="hideps" class="showHide hidePsss" onclick="hidePass()">hide</button>
+                </div> -->
+                <p>Confirm Password</p>
+                <input type="password" id="confirmPassword" class="my-3 form-control" required />
+                <div class="d-flex justify-content-center">
+                    <button type="submit" id="createAccount" class="btn btn-success w-75 my-3">Create Account</button>
+                </div>
+            </div>
+        </div>
+        <p class="my-2 text-center">
+            Already have an account?
+            <a href="Log In.html"><span class="text-danger-emphasis">Log In</span></a>
+        </p>
+    </div>
+</body>
+
+</html>
+<script type="module" src="Sign Up.js"></script>
